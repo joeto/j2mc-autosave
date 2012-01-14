@@ -1,0 +1,9 @@
+name: J2MC_autosave
+author: j2dev
+version: unimportant
+main: to.joe.j2mc.autosave.Autosave
+description: j2 autosaver
+commands:
+    forcesave:
+        usage: /forcesave 
+        description: forces a save
