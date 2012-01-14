@@ -15,7 +15,7 @@ public class ForceSaveCommand extends MasterCommand{
 
 	@Override
 	public void exec(CommandSender sender, String commandName, String[] args, Player player, String playerName, boolean isPlayer) {
-		if(sender.hasPermission("j2mc.forcesave")) {
+		if(sender.hasPermission("j2mc.forcesave") || !isPlayer) {
 			J2MC_Manager.getCore().adminAndLog(ChatColor.AQUA + sender.getName() + " forced a save");
 			Autosave.getSaver().run();
 		} else {
