@@ -20,7 +20,7 @@ public class J2MC_Autosave extends JavaPlugin {
     public void save(){
         this.getLogger().info(ChatColor.AQUA + "Saving players");
         this.getServer().savePlayers();
-        this.getLogger().info(ChatColor.AQUA + "Saving worlds");
+        this.getLogger().info(ChatColor.AQUA + "Saving worlds...");
         for (final World world : this.getServer().getWorlds()) {
             this.getLogger().info(ChatColor.AQUA + "Saved world " + world.getName());
             world.save();
