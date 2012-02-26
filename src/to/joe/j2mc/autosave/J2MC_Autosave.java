@@ -16,8 +16,8 @@ public class J2MC_Autosave extends JavaPlugin {
         this.getLogger().info("Autosaver enabled");
         this.getCommand("forcesave").setExecutor(new ForceSaveCommand(this));
     }
-    
-    public void save(){
+
+    public void save() {
         this.getLogger().info(ChatColor.AQUA + "Saving players");
         this.getServer().savePlayers();
         this.getLogger().info(ChatColor.AQUA + "Saving worlds...");
