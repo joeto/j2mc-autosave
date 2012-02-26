@@ -4,7 +4,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Autosave extends JavaPlugin {
 
-    private final ForceSaveCommand CExec = new ForceSaveCommand(this);
     public AutoSaver runner = new AutoSaver(this);
 
     @Override
@@ -16,8 +15,7 @@ public class Autosave extends JavaPlugin {
     @Override
     public void onEnable() {
         this.getLogger().info("Autosaver enabled");
-        this.getServer().getScheduler().scheduleSyncRepeatingTask(this, this.runner, 1, 6000);
-        this.getCommand("forcesave").setExecutor(this.CExec);
+        this.getCommand("forcesave").setExecutor(new ForceSaveCommand(this));
     }
 
 }
