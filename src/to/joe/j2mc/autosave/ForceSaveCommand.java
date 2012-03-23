@@ -19,7 +19,7 @@ public class ForceSaveCommand extends MasterCommand {
             J2MC_Manager.getCore().adminAndLog(ChatColor.AQUA + sender.getName() + " forced a save");
             ((J2MC_Autosave) this.plugin).save();
         } else {
-            sender.sendMessage(ChatColor.RED + "Incorrect hat type");
+            sender.sendMessage(ChatColor.RED + "Nice try, Zarflax!");
         }
     }
 

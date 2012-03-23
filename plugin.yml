@@ -1,7 +1,8 @@
 name: J2MC_autosave
-author: j2dev
-version: unimportant
 main: to.joe.j2mc.autosave.Autosave
+version: 1.0
+website: http://forums.joe.to
+author: J2 Minecraft Plugin Team
 description: j2 autosaver
 commands:
     forcesave:
